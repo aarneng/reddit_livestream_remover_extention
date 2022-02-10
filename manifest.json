@@ -1,0 +1,17 @@
+{
+  "name": "Reddit livestream blocker",
+  "description": "Automatically blocks reddit livestead on chrome/chromium browsers",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": [
+      "https://www.reddit.com/*"
+    ],
+    "js": [
+      "content.js"
+    ]
+  }],
+  "web_accessible_resources": [
+    "main.js"
+  ]
+}
